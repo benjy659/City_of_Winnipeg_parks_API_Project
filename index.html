@@ -1,0 +1,42 @@
+<!-------w------------
+
+    Assignment 4
+    Name:Benjamin Omoregie
+    Date: 30/05/2024
+    Description: AJAX search form that queries the City of Winnipeg Open Data API and displays search results below the form. 
+--------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>City of Winnipeg </title>
+    </head>
+    <body>
+        <div class="container">
+			<h1>City of Winnipeg Parks</h1>
+			<p>Search for parks in Winnipeg by name, Neighbourhood, or category.</p>
+			<p>Park catergories E.g - Greenfield, Open </p>
+			<p>Note: All search  must  start with a Capital letter. E.g- B</p>
+            <p>Neighbourhood must be all Caps. E.g- BEAMOUNT </p>
+            <p>Please enter one or more fields to begin search.</p>
+            <form id="search-form">
+                <label for="search-input-name">Park Name</label>
+                <input type="text" id="search-input-name" placeholder="Enter park name">
+                <label for="search-input-neighbourhood">Neighbourhood</label>
+                <input type="text" id="search-input-neighbourhood" placeholder="Enter a Neighbourhood">
+                <label for="search-input-category">Park Category</label>
+                <input type="text" id="search-input-category" placeholder="Enter park category">
+                <button type="submit">Search</button>
+            </form>
+            <div id="results"></div>
+        </div>
+    </body>
+</html>
